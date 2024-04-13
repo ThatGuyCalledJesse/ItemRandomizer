@@ -1,4 +1,6 @@
 name: ItemRandomizer
+author: ThatGuyCalledJesse
+description: A plugin that randomizes all items every
 version: '${project.version}'
 main: com.jesse.itemrandomizer.ItemRandomizer
 api-version: '1.20'
