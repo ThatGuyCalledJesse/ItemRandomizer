@@ -1,0 +1,4 @@
+name: ItemRandomizer
+version: '${project.version}'
+main: com.jesse.itemrandomizer.ItemRandomizer
+api-version: '1.20'
