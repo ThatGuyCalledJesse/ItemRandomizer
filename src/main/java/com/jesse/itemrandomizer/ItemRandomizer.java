@@ -45,7 +45,7 @@ public final class ItemRandomizer extends JavaPlugin {
                     player.playSound(player.getLocation(), Sound.BLOCK_TRIAL_SPAWNER_DETECT_PLAYER, 250, 29);
                 }
             }
-        }, 0, 2400L); // 2400L
+        }, 0, 1200L); // To customize, do 20 * the amount of seconds
 
     }
 }
