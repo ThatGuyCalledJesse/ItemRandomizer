@@ -2,6 +2,7 @@ package com.jesse.itemrandomizer;
 
 import com.jesse.itemrandomizer.listeners.InventoryOpenListener;
 import com.jesse.itemrandomizer.listeners.PlayerDropListener;
+import com.jesse.itemrandomizer.listeners.PlayerJoinListener;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -19,6 +20,7 @@ public final class ItemRandomizer extends JavaPlugin {
         Bukkit.getServer().broadcastMessage("[IR] ItemRandomizer is now enabled!");
         this.getServer().getPluginManager().registerEvents(new InventoryOpenListener(), this);
         this.getServer().getPluginManager().registerEvents(new PlayerDropListener(), this);
+        this.getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
         this.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
             @Override
             public void run() {
