@@ -4,3 +4,7 @@ description: A plugin that randomizes all items every
 version: '${project.version}'
 main: com.jesse.itemrandomizer.ItemRandomizer
 api-version: '1.20'
+commands:
+  rules:
+    usage: /rules
+    description: Prints the rules of the challenge on screen.
