@@ -1,2 +1,4 @@
-package com.jesse.itemrandomizer.listeners;public class PlayerJoinListener {
+package com.jesse.itemrandomizer.listeners;
+
+public class PlayerJoinListener {
 }
