@@ -40,7 +40,7 @@ public final class ItemRandomizer extends JavaPlugin {
                         }
                     }
                     player_inv.setContents(items);
-                    player.playSound(player.getLocation(), Sound.BLOCK_TRIAL_SPAWNER_DETECT_PLAYER, 100, 29);
+                    player.playSound(player.getLocation(), Sound.BLOCK_TRIAL_SPAWNER_DETECT_PLAYER, 250, 29);
                 }
             }
         }, 0, 2400L); // 2400L
