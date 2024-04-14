@@ -1,5 +1,6 @@
 package com.jesse.itemrandomizer;
 
+import com.jesse.itemrandomizer.commands.RulesCommand;
 import com.jesse.itemrandomizer.listeners.InventoryOpenListener;
 import com.jesse.itemrandomizer.listeners.PlayerDropListener;
 import com.jesse.itemrandomizer.listeners.PlayerJoinListener;
@@ -21,9 +22,10 @@ public final class ItemRandomizer extends JavaPlugin {
         this.getServer().getPluginManager().registerEvents(new InventoryOpenListener(), this);
         this.getServer().getPluginManager().registerEvents(new PlayerDropListener(), this);
         this.getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
+        this.getCommand("rules").setExecutor(new RulesCommand());
         this.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
             @Override
-            public void run() {
+            public void run() { // Very strange code, but it works
                 for (Player player : Bukkit.getOnlinePlayers()) {
                     Inventory player_inv = player.getInventory();
                     ItemStack[] items = player_inv.getContents();
