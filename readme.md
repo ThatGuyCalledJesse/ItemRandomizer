@@ -1,6 +1,6 @@
 # ItemRandomizer
 # What does this plugin do?
-When this plugin is installed, every 2 minutes (120 seconds) your inventory gets randomized.
+When this plugin is installed, every minute (60 seconds) your inventory gets randomized.
 # Can't I just use chests to evade this?
 No. Chests and dropping items aren't allowed.
 # What exactly randomizes?
