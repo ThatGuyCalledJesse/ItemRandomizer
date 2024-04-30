@@ -25,7 +25,7 @@ public final class ItemRandomizer extends JavaPlugin {
         this.getCommand("rules").setExecutor(new RulesCommand());
         this.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
             @Override
-            public void run() { // Very strange code, but it works
+            public void run() { // Very strange code, but it works so I won't change it
                 for (Player player : Bukkit.getOnlinePlayers()) {
                     Inventory player_inv = player.getInventory();
                     ItemStack[] items = player_inv.getContents();
